@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Product Details </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="product_validation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <br><br>
+    <div class="title">Product Details</div>
+    <div class="content">
+      <form action=""  method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">User Name</span>
+            <select name="user_name" id="user_name" required>
+              <option value="sid">sid</option>
+              <option value="sid">sid</option>
+              <option value="sid">sid</option>
+            </select>
+            
+          </div>
+          <div class="input-box">
+            <span class="details">Category Name </span>
+            <select name="user_name" id="user_name" required>
+              <option value="car">car</option>
+              <option value="car">car</option>
+              <option value="car">car</option>
+            </select>
+            
+          </div>
+          <div class="input-box">
+            <span class="details">Product Description</span>
+            <textarea name="prod_desc" placeholder="Enter Product Description" id="prod_desc" cols="42" rows="5" required></textarea>
+            
+          </div>
+          <div class="input-box">
+            <span class="details">Product Images</span>
+            <input type="file" name="prod_images" id="prod_images" multiple required>            
+          </div>
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+     
+    </div>
+  </div>
+
+  <img src="" alt="">
+</body>
+
+</html>

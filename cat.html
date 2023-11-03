@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Product Category Details </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="category_validation.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <br><br>
+    <div class="title">Product Category Details</div>
+    <div class="content">
+      <form action="cat.php" name="reg_form" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Category Code</span>
+            <input type="text" placeholder="Enter category code" name="cat_code" id="cat_code" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Category Name</span>
+            <input type="text" placeholder="Enter category name" name="cat_name" id="cat_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Category Index</span>
+            <input type="number"  placeholder="Enter category index" onkeypress="return isNumber(event)" name="cat_index" id="cat_index" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Category Description</span>
+            <textarea name="cat_desc" id="cat_desc" placeholder="Enter category description" cols="42" rows="5"></textarea>
+          </div>
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+      <div class="nav">
+        <a  href="users_listing.php"><input class="prev" type="submit" value="Previous">
+          <a  href="cat_listing.php"><input class="next" type="submit" value="Next"></a></a>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
